@@ -9,7 +9,3 @@ set :static, true
 set :sessions, false
 
 set :logging, true
-
-set :dump_errors, Sinatra::Base.development?
-
-set :raise_errors, Sinatra::Base.development?
