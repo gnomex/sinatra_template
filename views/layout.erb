@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sinatra Template</title>
+    <meta name="author" content="Kenner Kliemann">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="vendor/jquery-1.10.2.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="//www.google.com/jsapi"></script>
+
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+            <a class="brand" href="#">Example</a>
+
+            <ul class="nav">
+              <li><a href="/"><i class="icon-home"></i>Home</a></li>
+            </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+  <div class="container">
+
+    <section id="errors">
+      <%if @error then %>
+        <div class="alert alert-error"><%=@error%></div>
+      <% end %>
+    </section>
+
+    <section class="row-fluid">
+
+      <%= yield %>
+    
+    </section>
+
+    <section id="footer">
+      <%= erb :footer %>
+    </section>
+
+  </div>
+  </body>
+</html>

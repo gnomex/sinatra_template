@@ -1,2 +1,3 @@
-sinatra_template
+Sinatra Template
 ================
+	(Sintrarb)[http://www.sinatrarb.com/]
