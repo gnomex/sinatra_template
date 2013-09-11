@@ -5,12 +5,7 @@
     <meta name="author" content="Kenner Kliemann">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="vendor/jquery-1.10.2.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="//www.google.com/jsapi"></script>
-
-    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
-
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
   </head>
@@ -47,7 +42,7 @@
     <section class="row-fluid">
 
       <%= yield %>
-    
+
     </section>
 
     <section id="footer">
@@ -55,5 +50,11 @@
     </section>
 
   </div>
+
+  <!-- JS -->
+  <script src="vendor/jquery-1.10.2.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script async src="//www.google.com/jsapi"></script>
+
   </body>
 </html>
